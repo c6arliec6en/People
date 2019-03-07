@@ -1,0 +1,132 @@
+.modal-body p {
+	text-transform: capitalize;
+}
+
+#show-people-name {
+	font-size: 36px ;
+}
+
+h6 {
+	font-size: 28px;
+}
+
+.card-footer {
+	text-align: center;
+}
+
+.card-surname {
+	color: #888888;
+}
+
+img {
+	cursor: pointer;
+}
+
+.nav {
+	display: flex;
+	background-color: #F5F5F5;
+	align-items: center;
+	padding:10px;
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+}
+
+.menu-button {
+	display: none;
+	position: absolute;
+    font-size: 25px;
+    line-height: 40px;
+    background: transparent;
+    padding: 0 0 0 15px;
+    border: 0;
+    top: 10px;
+    right: 20px;
+}
+
+
+
+.change-page span {
+	padding:0 20px; 
+	cursor: pointer;
+}
+
+.all-data {
+	display: flex;
+	justify-content: center;
+}
+
+.menu-button-checkbox {
+	display:none;
+}
+
+.menu-button-checkbox:checked ~ .search-bar {
+  	display:flex;
+}
+
+.menu-button-checkbox:checked ~ .change-page {
+  	display:flex;
+}
+
+@media screen and (max-width:620px) {
+	
+	.menu-button{
+		display: flex;
+	}
+
+	.nav {
+		flex-direction: column;
+	}
+	
+	.search-bar {
+		display: none;
+		justify-content: center;
+		align-content: center;
+	}
+
+	
+	.change-page {
+		display: none;
+		width: 100%;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.change-page span {
+		width: 100%;
+		padding:10px 0;
+		border:0;
+		border-top: 1px solid #000;
+	}
+} 
+
+.filter-choose {
+	margin:0;
+	padding: 0 5px;
+	
+	
+}
+
+.filter-choose a {
+	vertical-align:bottom;
+}
+
+.filter-title {
+	padding:0 5px;
+	font-weight: 800;
+}
+
+.fa-heart:hover, .favorite {
+  color: red;
+}
+
+.fa-heart {
+	font-size: 20px;
+}
+
+.favorite-people {
+	color: red;
+}
